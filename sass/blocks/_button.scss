@@ -1,0 +1,153 @@
+
+.button {
+  &_big {
+    // &_blue {
+    //   @include big_button();
+    //   @include blue_button();
+     
+    // }
+    &_gray {
+      @include big_button();
+      @include gray_button();
+      cursor: pointer;
+    }
+    &_black {
+      @include big_button();
+      @include black_white();
+      cursor: pointer;
+      &:hover {
+        @include big_button();
+        @include white_blue();
+        cursor: pointer;
+      }
+      &:active {
+        @include big_button();
+        @include blue_button();
+        cursor: pointer;
+      }
+    }
+    // &_white_blue {
+    //   @include big_button();
+    //   @include white_blue();
+    // }
+    &_img {
+      &_blue {
+        @include button_img();        
+        @include blue_button();
+      }
+      &_gray {
+        @include button_img();
+        @include gray_button();
+        cursor: pointer;
+      }
+      &_black {
+        @include button_img();
+        @include black_white(); 
+        cursor: pointer;
+        stroke: #2C2C2C;
+        &:hover {
+          @include button_img();
+          @include white_blue();
+          cursor: pointer;
+          stroke: $main-color;
+        }
+        &:active {
+          @include button_img();        
+          @include blue_button();
+          cursor: pointer;
+          stroke: white;
+        }
+      }
+      &_white_blue {
+        @include button_img();
+        @include white_blue();
+      }
+    }
+  }
+  &_small {
+    &_blue {
+      @include button_small();
+      @include blue_button()
+    }
+    &_gray {
+      @include button_small();
+      @include gray_button();
+      cursor: pointer;
+    }
+    &_black {
+      @include button_small();
+      @include black_white();
+      stroke: #2C2C2C;
+      &:hover {
+        @include button_small();
+        @include white_blue();
+        cursor: pointer;
+        stroke: $main-color;
+      }
+      &:active {
+        @include button_small();
+        @include blue_button();
+        cursor: pointer;
+        stroke: $main-color;
+      }
+    }
+    &_white_blue {
+      @include button_small();
+      @include white_blue();
+    }
+    &_img {
+      &_blue {
+        @include button_small_img();
+        @include blue_button();
+      }
+      &_gray {
+        @include button_small_img();
+        @include gray_button();
+        cursor: pointer;
+        stroke: #878787;
+      }
+      &_black {
+        @include button_small_img();
+        @include black_white();
+        stroke: #2C2C2C;
+        &:hover {
+          @include button_small_img();
+          @include white_blue();
+          cursor: pointer;
+          stroke: $main-color;
+        }
+        &:active {
+          @include button_small_img();
+          @include blue_button();
+          cursor: pointer;
+          stroke: white;
+        }
+        &_red {
+          @include button_small_img();
+          @include black_white();
+          stroke: #2C2C2C;
+          &:hover {
+            @include button_small_img();
+            @include white_blue();
+            cursor: pointer;
+            stroke: $main-color;
+          }
+          &:active {
+            @include button_small_img();
+            @include red_button();
+            cursor: pointer;
+            stroke: white;
+          }
+        }
+      }
+      &_white_blue {
+        @include button_small_img();
+        @include white_blue();
+      }
+      &_red {
+        @include button_small_img();
+        @include red_button();
+      }
+    }
+  }
+}

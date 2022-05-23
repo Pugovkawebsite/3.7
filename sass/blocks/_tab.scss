@@ -1,0 +1,197 @@
+.tab {
+  &_small {
+    width: 168px;
+    height: 48px;
+    display: flex;
+    justify-content: left;
+    &_demonstration {
+      &_elem {
+        display: none;
+        &_active {
+          display: block;
+        }
+      }
+    }
+    &_elem {
+      &_base {
+        width: 56px;
+        height: 48px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_1 {
+          border-radius: 5px 0px 0px 5px;
+        }
+        &_3 {
+          border-radius: 0px 5px 5px 0px;
+        }
+        &_color {
+          background: #FFFFFF;
+          border: 1px solid #E0E0E0;
+          fill: #2C2C2C;
+          stroke: #2C2C2C;
+          cursor: pointer;
+          &_active {
+            background: $main-color;
+            fill: #FFFFFF;
+            stroke: #FFFFFF;
+            cursor: pointer;
+          }
+        }
+      }
+      &_1 {
+        background: $main-color;
+        border-radius: 5px 0px 0px 5px;
+        width: 56px;
+        height: 48px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &_2 {
+        width: 56px;
+        height: 48px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &_3 {
+        width: 56px;
+        height: 48px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 0px 5px 5px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &_midle {
+    width: 268px;
+    height: 46px;
+    display: flex;
+    justify-content: left;
+    &_elem {  
+      &_base {
+        &_1 {
+          width: 134px;
+          height: 46px;
+          border-radius: 5px 0px 0px 5px;
+          padding: 14px 46px;
+          font-weight: 500;
+          font-size: 15px;
+        }
+        &_2 {
+          width: 134px;
+          height: 46px;
+          border-radius: 0px 5px 5px 0px;
+          padding: 14px 47px;
+          font-weight: 500;
+          font-size: 15px;
+        }
+      }    
+      
+      &_color {
+        // width: 134px;
+        // height: 46px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        // border-radius: 0px 5px 5px 0px;
+        color: #2C2C2C;
+        // font-weight: 500;
+        // font-size: 15px;
+        // padding: 14px 47px;
+        cursor: pointer;
+        &_active {
+          // width: 134px;
+          // height: 46px;
+          // border-radius: 5px 0px 0px 5px;
+          background: $main-color;
+          // padding: 14px 47px;
+          color: #FFFFFF;
+          // font-weight: 500;
+          // font-size: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+    &_demonstration {
+      &_elem {
+        display: none;
+        &_active {
+          display: block;
+        }
+      }
+    }
+  }
+  &_big {
+    display: flex;
+    justify-content: left;
+    &_demonstration {
+      &_elem {
+        display: none;
+        &_active {
+          display: block;
+        }
+      }
+    }
+    &_elem {
+      &_base {
+        width: 106px;
+        height: 46px;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 14px 48px;
+        &_1 {
+          border-radius: 5px 0px 0px 5px;
+        }
+        &_3 {
+          border-radius: 0px 5px 5px 0px;
+        }
+        &_color {
+          background: #FFFFFF;
+          color: #2C2C2C;
+          border: 1px solid #E0E0E0;
+          cursor: pointer;
+          &_active {
+            background: $main-color;
+            color: #FFFFFF;
+            cursor: pointer;
+          }
+        }
+      }
+      &_1 {
+        width: 106px;
+        height: 46px;
+        background: $main-color;
+        border-radius: 5px 0px 0px 5px;
+        padding: 14px 48px;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 15px;
+      }
+      &_2 {
+        width: 106px;
+        height: 46px;
+        background: #FFFFFF;
+        color: #2C2C2C;
+        font-weight: 500;
+        font-size: 15px;
+        border: 1px solid #E0E0E0;
+        padding: 14px 48px;
+      }
+      &_3 {
+        width: 105px;
+        height: 46px;
+        background: #FFFFFF;
+        border: 1px solid #E0E0E0;
+        border-radius: 0px 5px 5px 0px;
+        padding: 14px 48px;
+      }
+    }
+  }
+}
